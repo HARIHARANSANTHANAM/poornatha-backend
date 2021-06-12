@@ -13,9 +13,8 @@ app.use(
 );
 app.use(cors());
 mongoose
-	//	.connect('mongodb+srv://poornatha:poornatha@01@cluster0.oprt7.mongodb.net/lms?retryWrites=true&w=majority')
-
-	.connect(
+//	.connect('mongodb+srv://poornatha:poornatha@01@cluster0.oprt7.mongodb.net/lms?retryWrites=true&w=majority')
+.connect(
 		'mongodb://poornatha:poornatha%4001@cluster0-shard-00-00.oprt7.mongodb.net:27017,cluster0-shard-00-01.oprt7.mongodb.net:27017,cluster0-shard-00-02.oprt7.mongodb.net:27017/lms?ssl=true&replicaSet=atlas-rdityo-shard-0&authSource=admin&retryWrites=true&w=majority',
 		{ useNewUrlParser: true , useUnifiedTopology: true} 
 	)
